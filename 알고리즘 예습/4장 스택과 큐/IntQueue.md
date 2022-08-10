@@ -125,7 +125,7 @@ void Print(const IntQueue* q)
 	for (i = 0; i < q->num; i++)
 	{
 		idx = (q->front + i) % q->max;
-		printf("%d ", q->que[i]);
+		printf("%d ", q->que[idx]);
 	}
 	printf("\n");
 }
