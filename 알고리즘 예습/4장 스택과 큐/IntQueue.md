@@ -109,7 +109,7 @@ int IsFull(const IntQueue* q)
 int Search(const IntQueue* q, int x)
 {
 	int i, idx;
-	for (i = q->front; i < q->rear; i++)
+	for (i = 0; i < q->num; i++)
 	{
 		idx = (q->front + i) % q->max;
 		if (q->que[idx] == x)
